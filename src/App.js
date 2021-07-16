@@ -1,31 +1,34 @@
 import React from 'react';
-import {
-  BrowserRouter as Router, Switch, Route, Link,
-} from 'react-router-dom';
-import GlobalStyle from './assets/styles/globalStyles';
-import Home from './routes/Home';
-import Search from './routes/Search';
+// import {
+//   BrowserRouter as Router, Switch, Route, Link,
+// } from 'react-router-dom';
+// import GlobalStyle from './assets/styles/globalStyles';
+// import Home from './routes/Home';
+// import Search from './routes/Search';
 
-export default function App() {
+function App() {
   return (
-    <Router>
-      <GlobalStyle />
-      <div>
-        <nav>
+    <div>
+      <h1>Hello</h1>
+    </div>
+    // <Router>
+    // <GlobalStyle />
+    // <div>
+    /* <nav>
           <ul>
             <li>
               <Link to="/search">Search</Link>
             </li>
-            {/* <li>
+            <li>
               <Link to="#">How it works</Link>
             </li>
             <li>
               <Link to="#">About</Link>
-            </li> */}
+            </li>
           </ul>
-        </nav>
+        </nav> */
 
-        <Switch>
+  /* <Switch>
           <Route path="/search">
             <Search />
           </Route>
@@ -33,8 +36,10 @@ export default function App() {
           <Route path="/">
             <Home />
           </Route>
-        </Switch>
-      </div>
-    </Router>
+        </Switch> */
+  /* </div> */
+  /* // </Router> */
   );
 }
+
+export default App();
