@@ -1,22 +1,24 @@
 import React from 'react';
-import NavLink from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import styled from 'styled-components';
+
+const NavDiv = styled.div`
+  width: 261px;
+  height: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  font-size: 1.1rem;
+`;
 
 export default function NavBar() {
   return (
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <NavLink to="/search">Search</NavLink>
-          </li>
-          <li>
-            <NavLink to="#">How it works</NavLink>
-          </li>
-          <li>
-            <NavLink to="#">About</NavLink>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <NavDiv>
+      <NavLink to="/search">Search</NavLink>
+      <NavLink to="">How it works</NavLink>
+      <NavLink to="">About</NavLink>
+    </NavDiv>
   );
 }
