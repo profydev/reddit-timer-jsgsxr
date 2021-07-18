@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { NavHashLink } from 'react-router-hash-link';
 import styled from 'styled-components';
 
 const NavDiv = styled.div`
@@ -17,8 +18,8 @@ export default function NavBar() {
   return (
     <NavDiv>
       <NavLink to="/search">Search</NavLink>
-      <NavLink to="">How it works</NavLink>
-      <NavLink to="">About</NavLink>
+      <NavHashLink smooth to="/#HowitWorks">How it works</NavHashLink>
+      <NavHashLink smooth to="/#About">About</NavHashLink>
     </NavDiv>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import logo from '../../assets/icons/logo.svg';
 
 const IconDiv = styled.div`
@@ -14,10 +14,10 @@ const IconDiv = styled.div`
 
 export default function HeaderIcon() {
   return (
-    <Link to="/">
+    <HashLink smooth to="/#top">
       <IconDiv>
         <img src={logo} alt="Reddit" />
       </IconDiv>
-    </Link>
+    </HashLink>
   );
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import reddit from '../../assets/icons/reddit.png';
 
@@ -21,7 +22,7 @@ const FooterText = styled.p`
 export default function Footer() {
   return (
     <FooterDiv>
-      <FooterText>profy.dev</FooterText>
+      <FooterText><Link to="https://profy.dev/employers">profy.dev</Link></FooterText>
       <img src={reddit} alt="reddit" />
       <FooterText>Terms & Privacy</FooterText>
     </FooterDiv>

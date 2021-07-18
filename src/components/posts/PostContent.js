@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const PostTitle = styled.h1`
@@ -16,7 +17,7 @@ const PostDetail = styled.p`
 export function PostContent1() {
   return (
     <>
-      <PostTitle>How it works</PostTitle>
+      <PostTitle id="HowitWorks">How it works</PostTitle>
       <PostDetail>
         • We find the 500 top posts from the past year for a subreddit.
         <br />
@@ -31,13 +32,17 @@ export function PostContent1() {
 export function PostContent2() {
   return (
     <>
-      <PostTitle>About</PostTitle>
+      <PostTitle id="About">About</PostTitle>
       <PostDetail>
-        This app was created during a course on profy.dev with the goal to implement a
+        This app was created during a course on
+        <Link to="https://profy.dev"> profy.dev </Link>
+        with the goal to implement a
         <br />
         pixel-perfect real-world application with professional workflows and tools like Kanban,
         <br />
-        Asana, Zeplin, GitHub, pull requests and code reviews. Click here for more information.
+        Asana, Zeplin, GitHub, pull requests and code reviews.
+        <Link to="https://profy.dev/employers"> Click here </Link>
+        for more information.
       </PostDetail>
     </>
   );
