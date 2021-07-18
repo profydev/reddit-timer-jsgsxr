@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/icons/reddit.png';
+import logo from '../../assets/icons/logo.svg';
 
 const IconDiv = styled.div`
   width: 150px;
@@ -17,7 +17,6 @@ export default function HeaderIcon() {
     <Link to="/">
       <IconDiv>
         <img src={logo} alt="Reddit" />
-        <h3>reddit timer</h3>
       </IconDiv>
     </Link>
   );

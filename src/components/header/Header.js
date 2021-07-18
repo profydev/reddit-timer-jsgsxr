@@ -13,6 +13,7 @@ const HeaderDiv = styled.div`
   justify-content: space-between;
   padding: 0 80px;
   z-index: 1;
+  background: white;
 `;
 
 export default function Header() {

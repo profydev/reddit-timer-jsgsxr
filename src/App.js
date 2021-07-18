@@ -5,7 +5,8 @@ import {
 import { Normalize } from 'styled-normalize';
 import Header from './components/header/Header';
 import GlobalStyle from './assets/styles/globalStyles';
-// import Home from './routes/Home';
+import Home from './routes/Home';
+import Footer from './components/footer/Footer';
 // import Search from './routes/Search';
 
 function App() {
@@ -15,9 +16,10 @@ function App() {
       <GlobalStyle />
       <Header />
       <Switch>
-        <Route path="/search" />
-        <Route path="/" />
+        <Route exact path="/search" />
+        <Route exact path="/" component={Home} />
       </Switch>
+      <Footer />
     </>
   );
 }
