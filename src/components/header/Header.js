@@ -18,9 +18,11 @@ const HeaderDiv = styled.div`
 
 export default function Header() {
   return (
-    <HeaderDiv>
-      <HeaderIcon />
-      <NavBar />
-    </HeaderDiv>
+    <header>
+      <HeaderDiv>
+        <HeaderIcon />
+        <NavBar />
+      </HeaderDiv>
+    </header>
   );
 }
